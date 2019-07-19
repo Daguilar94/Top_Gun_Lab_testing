@@ -1,0 +1,66 @@
+.grade-container {
+    width: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 170px 40px;
+}
+
+.grade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    /* height: 100px;
+    width: 20%; */
+}
+
+.grade-divider {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.grade-value,
+.grade-weight {
+    background: transparent;
+    flex-grow: 1;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+.grade-value:focus,
+.grade-weight:focus {
+    outline: none;
+}
+
+.grade-value {
+    border-radius: 10px 10px 0 0;
+    border: none;
+    padding-top: 1rem
+}
+
+.grade-weight {
+    border-radius: 0 0 10px 10px;
+    border: none;
+    padding-bottom: 1rem
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.grade-value.error {
+    border-bottom: none;
+}
+
+.grade-weight.error {
+    border-top: none;
+}
+
+.wrong-grade-value,
+.wrong-grade-weight {
+    font-size: 1rem;
+    color: red;
+}

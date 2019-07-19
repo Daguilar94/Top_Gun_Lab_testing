@@ -6,3 +6,14 @@ export const getAverage = (array) => {
     }
     return null;
 };
+
+export const isInRange = (low, high, number) => {
+    if (Number(number) || Number(number) === 0) {
+        return number >= low && number <= high;
+    }
+    return false;
+}
+
+export const getResult = (grades) => {
+    return grades.reduce((accum, {value, weight}) => accum + value * weight / 100, 0)
+}
